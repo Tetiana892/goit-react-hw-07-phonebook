@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Item, ItemContainer, Button } from './ContactItem.styled';
 
-const ContactItem = ({ name, number, id, deleteContact }) => {
+export default function ContactItem({ name, number, id, deleteContact }) {
   return (
     <Item key={id}>
       <ItemContainer>
@@ -14,7 +14,7 @@ const ContactItem = ({ name, number, id, deleteContact }) => {
       </ItemContainer>
     </Item>
   );
-};
+}
 
 ContactItem.propTypes = {
   id: PropTypes.string.isRequired,
@@ -22,5 +22,3 @@ ContactItem.propTypes = {
   number: PropTypes.string.isRequired,
   deleteContact: PropTypes.func.isRequired,
 };
-
-export default ContactItem;

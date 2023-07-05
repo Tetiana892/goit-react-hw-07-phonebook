@@ -3,7 +3,7 @@ import ContactForm from './ContactForm/ContactForm';
 import ContactList from './ContactList/ContactList';
 import Filter from './Filter/Filter';
 
-const App = () => {
+export default function App() {
   return (
     <Container>
       <Section title="Phonebook">
@@ -18,6 +18,4 @@ const App = () => {
       </Section>
     </Container>
   );
-};
-
-export default App;
+}
